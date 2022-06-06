@@ -1,3 +1,7 @@
+:root{
+    --dark-blue : rgb(48, 48, 49);
+}
+
 
 body {
     margin: 0;
@@ -66,6 +70,7 @@ a:hover {
 
 .top > p {
     font-size: 24px;
+    color: white;
     width: 750px;
 }
 
@@ -78,7 +83,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     flex: 4;
-    background-color: rgb(196, 196, 196);
+    background-color: var(--dark-blue);
 }
 
 .input-container{
@@ -94,10 +99,19 @@ a:hover {
     flex-direction: column;
 }
 
+.input > label {
+    text-indent: 2px;
+    letter-spacing: 4px;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+
 .form-input{
     padding-left: 36px;
     padding-bottom: 24px;
-    box-shadow: 0 2px 2px 0 rgb(73, 73, 73);
+    box-shadow: 0 2px 2px 0 rgb(255, 255, 255);
     background-color: rgb(226, 225, 225);
 }
 
@@ -105,7 +119,9 @@ a:hover {
     margin-left: 36px;
     margin-top: 12px;
     padding: 12px 48px;
-    background-color: rgb(163, 163, 199);
+    background-color: rgb(80, 80, 94);
+    color: white;
+    font-size: 16px;
     border: 0;
     border-radius: 10px;
 }
@@ -132,7 +148,7 @@ a:hover {
     width: 100%;
     padding: 5px 15px;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 24px;
     border: 1px solid rgb(189, 188, 188);
     font-size: 16px;
 }
@@ -141,4 +157,6 @@ a:hover {
     box-shadow: 3px 3px grey;
 }
 
-
+.login > p{
+    color: white;
+}
