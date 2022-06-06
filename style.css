@@ -1,6 +1,8 @@
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Anek Bangla', sans-serif;
 }
 
 .body{
@@ -8,21 +10,17 @@ body {
     display: flex;
 }
 
-.form-input{
-    width: 200px;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 .sidebar{
     font-family: 'Anek Bangla', sans-serif; 
     background-image: url(./background.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     display: flex;
-    flex: 1;
+    flex: 2;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+    min-width: 300px;
 }
 
 .logo{
@@ -40,23 +38,101 @@ body {
     opacity: 0.65;
 }
 
-.credit > a:link {
+a:link {
     color: rgb(23, 23, 41);
 }
 
 
 
-.credit >a:visited{
-    color: rgb(176, 176, 218);
+a:visited{
+    color: rgb(131, 131, 221);
 }
 
-.credit > a:hover {
+a:hover {
     color: rgb(0, 0, 0);
 }
 
 
+.top{
+    display: flex;
+    flex:1;
+    padding-left: 48px;
+    align-items: center;
+    padding-top: 24px;
+    
+}
+
+
+
+.top > p {
+    font-size: 24px;
+    width: 750px;
+}
+
+.login{
+    display: flex;
+    flex:2;
+    flex-direction: column;
+}
 .content{
     display: flex;
     flex-direction: column;
-    flex: 3;
+    flex: 4;
+    background-color: rgb(196, 196, 196);
 }
+
+.input-container{
+    column-gap: 64px;
+    row-gap: 12px;
+}
+
+.input, .input-container{
+    display: flex;
+}
+
+.input{
+    flex-direction: column;
+}
+
+.form-input{
+    padding-left: 36px;
+    padding-bottom: 24px;
+    box-shadow: 0 2px 2px 0 rgb(73, 73, 73);
+    background-color: rgb(226, 225, 225);
+}
+
+.create{
+    margin-left: 36px;
+    margin-top: 12px;
+    padding: 12px 48px;
+    background-color: rgb(163, 163, 199);
+    border: 0;
+    border-radius: 10px;
+}
+
+.create:hover{
+    background-color: rgb(97, 97, 121);   
+}
+
+.create:active{
+    box-shadow: inset 0px 0px 5px rgb(175, 187, 236) ;
+}
+
+.login > p {
+    padding-left: 36px;
+    font-size: 18px;
+}
+
+.form-input > p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+    width: 100%;
+    padding: 2px 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid rgb(189, 188, 188);
+}
+
