@@ -108,6 +108,13 @@ input:invalid{
     border: 1px solid red;
 }
 
+.error-tag{
+    margin-top:0;
+    margin-bottom: 0;
+    color: red;
+    font-size: 12px;
+}
+
 .form-input{
     padding-left: 36px;
     padding-bottom: 24px;
